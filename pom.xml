@@ -5,12 +5,23 @@
 	<groupId>com.nanoxic</groupId>
 	<artifactId>NanoRPC4J-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.nanoxic</groupId>
 			<artifactId>NanoRPC4J</artifactId>
 			<version>0.0.4-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.6</version>
 		</dependency>
 	</dependencies>
 
