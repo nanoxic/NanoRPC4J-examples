@@ -2,17 +2,12 @@
 
 * Make sure you have a running rai_node 10 available and RPC is enabled
 ```
-git clone https://github.com/nanoxic/NanoRPC4J.git
-cd NanoRPC4J/
+git clone https://github.com/nanoxic/NanoRPC4J-examples.git
+cd NanoRPC4J-examples/
 ```
 * Rename application.properties.example to application.properties in src/main/resources
 * Add the hostname and port form your node
 * Add a public key and Rai/Nano address
-* Then run:
-```
-mvn clean install
-java -jar target/NanoRPC-0.0.2-SNAPSHOT-jar-with-dependencies.jar 
-````
 
 ## Contribute
 
