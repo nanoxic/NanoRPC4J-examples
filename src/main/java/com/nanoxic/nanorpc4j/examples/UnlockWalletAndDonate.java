@@ -16,7 +16,7 @@ import com.nanoxic.nanorpc4j.Wallet;
 
 public class UnlockWalletAndDonate {
 
-	private static String destinationAddress = "xrb_1do85i48hp98dwjp6qq6oubhbhrp43tdz18y68t76h9mygs75qxiw9apcrhi";
+	private static String destinationAddress = "xrb_1fkbaxgir4ie7w5ay9fn366d96sitknpbieft8n3rkfpfdj66qx8ymf8ddqi";
 
 	public static void main(String[] args) throws ConfigurationException, IOException {
 
