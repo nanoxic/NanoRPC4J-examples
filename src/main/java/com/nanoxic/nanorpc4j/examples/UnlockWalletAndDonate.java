@@ -14,7 +14,7 @@ import com.nanoxic.nanorpc4j.Convert;
 import com.nanoxic.nanorpc4j.Node;
 import com.nanoxic.nanorpc4j.Wallet;
 
-public class Demo {
+public class UnlockWalletAndDonate {
 
 	private static String destinationAddress = "xrb_1do85i48hp98dwjp6qq6oubhbhrp43tdz18y68t76h9mygs75qxiw9apcrhi";
 
@@ -58,12 +58,6 @@ public class Demo {
 		// Check if source address is part of the current wallet
 		if (!wallet.contains(sourceAccount)) {
 			System.out.println("Address given in config file is not part of given wallet");
-			System.exit(0);
-		}
-
-		// Check if destination address is a valid Nano address
-		if (!Node.isValidAccount(destinationAccount)) {
-			System.out.println("The destination account is not a valid Nano account");
 			System.exit(0);
 		}
 

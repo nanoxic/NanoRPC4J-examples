@@ -9,7 +9,7 @@ import com.nanoxic.nanorpc4j.Account;
 import com.nanoxic.nanorpc4j.HistoryItem;
 import com.nanoxic.nanorpc4j.Node;
 
-public class AccountTest {
+public class ShowAccountFunctions {
 
 	public static void main(String[] args) throws ConfigurationException {
 		
@@ -50,30 +50,16 @@ public class AccountTest {
 		System.out.println(account.getInfo().getFrontier());
 		System.out.println(account.getInfo().getModified_timestamp());
 		System.out.println(account.getInfo().getOpen_block());
-		System.out.println(account.getInfo().getPending());
-		System.out.println(account.getInfo().getRepresentative());
-		System.out.println(account.getInfo().getRepresentative_block());
-		System.out.println(account.getInfo().getWeight());
 		System.out.println();
-		System.out.println(account.getInfo(true, true, true).getPending());
-		System.out.println(account.getInfo(true, true, true).getRepresentative());
-		System.out.println(account.getInfo(true, true, true).getRepresentative_block());
-		System.out.println(account.getInfo(true, true, true).getWeight());
-		System.out.println();
+
+		// Show some account history
 		List<HistoryItem> history = account.getHistory();
-		for (HistoryItem i : history) {
-			System.out.println(i.getAccount());
-			System.out.println(i.getAmount());
-			System.out.println(i.getHash());
-			System.out.println(i.getType());
-		}
-		System.out.println();
-		history = account.getHistory(20);
-		for (HistoryItem i : history) {
-			System.out.println(i.getAccount());
-			System.out.println(i.getAmount());
-			System.out.println(i.getHash());
-			System.out.println(i.getType());
+		for (HistoryItem historyItem : history) {
+			System.out.print(historyItem.getType() + " ");
+			System.out.println(historyItem.getAccount());
+			System.out.println(historyItem.getAmount());
+			System.out.println(historyItem.getHash());
+			System.out.println();
 		}
 	}
 

@@ -1,4 +1,4 @@
-package com.nanoxic.nanorpc4j.examples;
+package com.nanoxic.nanorpc4j.crap;
 
 import java.math.BigInteger;
 

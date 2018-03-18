@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>com.nanoxic</groupId>
 			<artifactId>NanoRPC4J</artifactId>
-			<version>0.0.4-SNAPSHOT</version>
+			<version>0.0.7-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-configuration</groupId>

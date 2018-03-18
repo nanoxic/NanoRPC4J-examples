@@ -5,7 +5,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 
 import com.nanoxic.nanorpc4j.Node;
 
-public class NodeTest {
+public class ShowNodeFunctions {
 
 	public static void main(String[] args) throws ConfigurationException {
 		// Load config
