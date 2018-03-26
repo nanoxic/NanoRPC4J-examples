@@ -44,19 +44,16 @@ public class ShowAccountFunctions {
 		System.out.println(account.getPending());
 		System.out.println(account.getBlockCount());
 		System.out.println(account.getRepresentative());
-		System.out.println();
-		System.out.println(account.getInfo().getBalance());
-		System.out.println(account.getInfo().getBlock_count());
-		System.out.println(account.getInfo().getFrontier());
-		System.out.println(account.getInfo().getModified_timestamp());
-		System.out.println(account.getInfo().getOpen_block());
+		System.out.println(account.getFrontier());
+		System.out.println(account.getLastModified());
+		System.out.println(account.getOpenBlock());
 		System.out.println();
 
 		// Show some account history
 		List<HistoryItem> history = account.getHistory();
 		for (HistoryItem historyItem : history) {
 			System.out.print(historyItem.getType() + " ");
-			System.out.println(historyItem.getAccount());
+			System.out.println(historyItem.getAccount().getAddress());
 			System.out.println(historyItem.getAmount());
 			System.out.println(historyItem.getHash());
 			System.out.println();
